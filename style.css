@@ -18,7 +18,7 @@ header {
 }
 
 header .logo {
-    width: 100px;
+    width: 105px; /* 5% larger */
     height: auto;
     position: absolute;
     top: 50%;
@@ -76,8 +76,8 @@ section p {
 }
 
 /* Gallery styles */
-#photos img {
-    max-width: 48%;
+#photos img.gallery-photo {
+    max-width: 24%; /* 50% smaller */
     height: auto;
     display: inline-block;
     margin: 1%;
@@ -85,7 +85,7 @@ section p {
     transition: transform 0.2s ease-in-out;
 }
 
-#photos img:hover {
+#photos img.gallery-photo:hover {
     transform: scale(1.05);
 }
 
@@ -119,8 +119,8 @@ footer {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    #photos img {
-        max-width: 100%;
+    #photos img.gallery-photo {
+        max-width: 50%; /* 50% smaller based on new size */
         margin: 0.5em 0;
     }
     
